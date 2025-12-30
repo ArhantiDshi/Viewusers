@@ -16,6 +16,9 @@ export default function UserPage() {
         </p>
 
         <Counter />
+       
+  <h1>{new Date().toLocaleTimeString()}</h1>;
+
       </div>
     </div>
   );
