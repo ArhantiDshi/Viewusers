@@ -1,8 +1,9 @@
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 
 export const metadata = {
-  title: "User Directory",
-  description: "Small Next.js demo project",
+  title: "User Directory - Modern User Management",
+  description: "A beautiful Next.js application for managing users with CRUD operations and smooth animations",
 };
 
 export default function RootLayout({
@@ -12,11 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-900">
-        <header className="bg-white shadow p-4 font-bold text-lg">
-          User Directory
-        </header>
-        <main className="p-6">{children}</main>
+      <body className="antialiased">
+        <Navigation />
+        <main className="lg:ml-[280px] transition-all duration-300">
+          {children}
+        </main>
       </body>
     </html>
   );
